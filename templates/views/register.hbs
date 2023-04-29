@@ -1,0 +1,39 @@
+{{> header}}
+{{> navbar}}
+<div>
+    <div class="d-flex justify-content-center mt-5 pt-5 register">
+        <form class="row g-3" action="/register" method="POST">
+        <div class="col-auto">
+            <label for="staticEmail2" class="visually-hidden">Email</label>    
+            <input type="text" class="form-control mb-2" id="inputPassword1" placeholder="Firstname" name="firstname">
+            <input type="text" class="form-control mb-2" id="inputPassword2" placeholder="Phone" name="phone">
+            <input type="email" class="form-control mb-2" id="inputPassword3" placeholder="Email" name="email">
+            <input type="password" class="form-control mb-2" id="inputPassword4" placeholder="Password" name="password">
+
+        </div>
+        <div class="col-auto">
+            <label for="inputPassword2" class="visually-hidden">Password</label>
+            <input type="text" class="form-control mb-2" id="inputPassword5" placeholder="Lastname" name="lastname">
+            <div class="d-flex py-2">
+                <div class="form-check  mx-4">
+                    <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Male
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Female
+                    </label>
+                </div>
+            </div>
+            <input type="text" class="form-control mb-2" id="inputPassword6" placeholder="Your Age" name="age">
+            <input type="password" class="form-control mb-2" id="inputPassword7" placeholder="Confirm password" name="confirmpassword">
+        </div>
+        <div class="buttons">
+            <button type="submit" class="sub-btn btn btn-primary mb-3">Submit</button>
+        </div>
+        </form>
+    </div>  
+</div>

@@ -1,0 +1,20 @@
+{{> header}}
+{{> navbar}}
+<div class="login-main container-lg">
+    <form class="row g-3" action="/login" method="POST">
+        <div class="col-auto">
+            <label for="staticEmail2" class="visually-hidden">Email</label>
+            <input type="email" class="form-control" id="staticEmail2" placeholder="Email" name="email">
+        </div>
+        <div class="col-auto">
+            <label for="inputPassword2" class="visually-hidden">Password</label>
+            <input type="password" class="form-control" id="inputPassword2" placeholder="Password" name="password">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3 ">Login</button>
+        </div>
+    </form>
+    <div class="forgotp">
+        <a class="forgotpass" href="/login">forgot password?</a>
+    </div>
+</div>
